@@ -22,3 +22,7 @@ class BasicCalculator:
     def divide_numbers(self):
         self.result = self.first_number / self.second_number
         print(self.result)
+    # this is similar to the "Ans" button in some calculators
+    # which will print the answer of the last operation performed 
+    def last_answer(self):
+        print(self.result)
