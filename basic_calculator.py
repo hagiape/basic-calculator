@@ -7,9 +7,18 @@ class BasicCalculator:
         self.second_number = second_number
     # calculator functions
     # add
-    def add_numbers(self):
+    def sum(self):
         self.result = self.first_number + self.second_number
         print(self.result)
     # subtract
+    def difference(self):
+        self.result = self.first_number - self.second_number
+        print(self.result)
     # multiply
+    def product(self):
+        self.result = self.first_number * self.second_number
+        print(self.result)
     # divide
+    def quotient(self):
+        self.result = self.first_number / self.second_number
+        print(self.result)
