@@ -9,6 +9,7 @@ class BasicCalculator:
     # add
     def add_numbers(self):
         self.result = self.first_number + self.second_number
+        print(self.result)
     # subtract
     # multiply
     # divide
