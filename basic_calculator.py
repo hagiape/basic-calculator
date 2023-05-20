@@ -7,6 +7,8 @@ class BasicCalculator:
         self.second_number = second_number
     # calculator functions
     # add
+    def add_numbers(self):
+        self.result = self.first_number + self.second_number
     # subtract
     # multiply
     # divide
