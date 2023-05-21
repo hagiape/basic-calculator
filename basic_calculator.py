@@ -1,7 +1,6 @@
 class BasicCalculator:
-    # class variables
     result = 0
-    # constructor
+
     def __init__(self, first_number, second_number, is_scientific = False, brand = 'Brand X'):
         # this is to prevent unnecessary conversion of input to float
         # when performing basic artithmetic operations. the result will 
@@ -14,29 +13,28 @@ class BasicCalculator:
             self.second_number = int(second_number)
         self.is_scientific = is_scientific
         self.brand = brand
-    # calculator functions
-    # add
+
     def add_numbers(self):
         try:
             self.result = self.first_number + self.second_number
             print(self.result)
         except:
             print('There is an error. Please initialize the object properly.')
-    # subtract
+
     def subtract_numbers(self):
         try:
             self.result = self.first_number - self.second_number
             print(self.result)
         except:
             print('There is an error. Please initialize the object properly.')
-    # multiply
+
     def multiply_numbers(self):
         try:
             self.result = self.first_number * self.second_number
             print(self.result)
         except:
             print('There is an error. Please initialize the object properly.')
-    # divide
+
     def divide_numbers(self):
         try:
             self.result = self.first_number / self.second_number
