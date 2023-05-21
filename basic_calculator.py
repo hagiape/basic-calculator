@@ -46,7 +46,7 @@ class BasicCalculator:
     # for the scientific calculator objects. 
     # if is_scientific == False, the method wouldn't run
     def exponentiate(self):
-        if self.is_scientific == True:
+        if self.is_scientific:
             try:
                 self.result = self.first_number ** self.second_number
                 print(self.result)
@@ -56,7 +56,7 @@ class BasicCalculator:
             print('This calculator can only perform simple arithmetic operations!')
             
     def nth_root(self):
-        if self.is_scientific == True:
+        if self.is_scientific:
             try:
                 self.result = self.first_number ** (1/self.second_number)
                 print(self.result)
