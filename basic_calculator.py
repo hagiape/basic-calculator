@@ -2,21 +2,16 @@ class BasicCalculator:
     result = 0
 
     def __init__(self, first_number, second_number, is_scientific = False, brand = 'Brand X'):
-        # this is to prevent unnecessary conversion of input to float
-        # when performing basic artithmetic operations. the result will 
-        # always be an integer except when performing simple division
-        if '.' in first_number or second_number:
-            self.first_number = float(first_number)
-            self.second_number = float(second_number)
-        else:
-            self.first_number = int(first_number)
-            self.second_number = int(second_number)
+        self.first_number = float(first_number)
+        self.second_number = float(second_number)
         self.is_scientific = is_scientific
         self.brand = brand
 
     def add_numbers(self):
         try:
             self.result = self.first_number + self.second_number
+            if self.result.is_integer():
+                self.result = int(self.result)
             print(self.result)
         except:
             print('There is an error. Please initialize the object properly.')
@@ -24,6 +19,8 @@ class BasicCalculator:
     def subtract_numbers(self):
         try:
             self.result = self.first_number - self.second_number
+            if self.result.is_integer():
+                self.result = int(self.result)
             print(self.result)
         except:
             print('There is an error. Please initialize the object properly.')
@@ -31,6 +28,8 @@ class BasicCalculator:
     def multiply_numbers(self):
         try:
             self.result = self.first_number * self.second_number
+            if self.result.is_integer():
+                self.result = int(self.result)
             print(self.result)
         except:
             print('There is an error. Please initialize the object properly.')
@@ -38,6 +37,8 @@ class BasicCalculator:
     def divide_numbers(self):
         try:
             self.result = self.first_number / self.second_number
+            if self.result.is_integer():
+                self.result = int(self.result)
             print(self.result)
         except:
             print('There is an error. Please initialize the object properly.')
