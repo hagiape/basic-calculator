@@ -8,15 +8,15 @@ class BasicCalculator:
         self.is_scientific = is_scientific
         self.brand = brand
     
-    def calculate(self, operator):
+    def calculate(self):
         try:
-            if operator == '+':
+            if self.operator == '+':
                 self.result = self.first_number + self.second_number
-            if operator == '-':
+            if self.operator == '-':
                 self.result = self.first_number - self.second_number
-            if operator == '*':
+            if self.operator == '*':
                 self.result = self.first_number * self.second_number
-            if operator == '/':
+            if self.operator == '/':
                 self.result = self.first_number / self.second_number
 
             if self.result.is_integer():
@@ -26,41 +26,6 @@ class BasicCalculator:
         except ValueError:
             print('There is an error. Please initialize the calculator properly.')
 
-    def add_numbers(self):
-        try:
-            self.result = self.first_number + self.second_number
-            if self.result.is_integer():
-                self.result = int(self.result)
-            print(self.result)
-        except:
-            print('There is an error. Please initialize the object properly.')
-
-    def subtract_numbers(self):
-        try:
-            self.result = self.first_number - self.second_number
-            if self.result.is_integer():
-                self.result = int(self.result)
-            print(self.result)
-        except:
-            print('There is an error. Please initialize the object properly.')
-
-    def multiply_numbers(self):
-        try:
-            self.result = self.first_number * self.second_number
-            if self.result.is_integer():
-                self.result = int(self.result)
-            print(self.result)
-        except:
-            print('There is an error. Please initialize the object properly.')
-
-    def divide_numbers(self):
-        try:
-            self.result = self.first_number / self.second_number
-            if self.result.is_integer():
-                self.result = int(self.result)
-            print(self.result)
-        except:
-            print('There is an error. Please initialize the object properly.')
     # the methods below are additional methods and only applicable
     # for the scientific calculator objects. 
     # if is_scientific == False, the method wouldn't run
