@@ -11,28 +11,28 @@ class BasicCalculator:
         try:
             if self.is_scientific:
                 if self.operator == '^':
-                    result = self.first_number ** self.second_number
+                    BasicCalculator.result = self.first_number ** self.second_number
                 elif self.operator == 'root':
-                    result = self.first_number ** (1/self.second_number)
+                    BasicCalculator.result = self.first_number ** (1/self.second_number)
                 elif self.operator == 'notation':
-                    result = self.first_number * (10 ** self.second_number)
+                    BasicCalculator.result = self.first_number * (10 ** self.second_number)
                 elif self.operator in ['+', '-', '*', '/']:
-                    result = eval(f"self.first_number {self.operator} self.second_number")
+                    BasicCalculator.result = eval(f"self.first_number {self.operator} self.second_number")
 
-                if result.is_integer():
-                    result = int(result)
-                print(result)
+                if BasicCalculator.result.is_integer():
+                    BasicCalculator.result = int(BasicCalculator.result)
+                print(BasicCalculator.result)
             else:
                 if self.operator in ['+', '-', '*', '/']:
-                    result = eval(f"self.first_number {self.operator} self.second_number")
-                    if result.is_integer():
-                        result = int(result)
-                    print(result)
+                    BasicCalculator.result = eval(f"self.first_number {self.operator} self.second_number")
+                    if BasicCalculator.result.is_integer():
+                        BasicCalculator.result = int(BasicCalculator.result)
+                    print(BasicCalculator.result)
                 else:
                     print('This calculator cannot perform that operation.')
         except ValueError:
             print('There is an error. Please initialize the calculator properly.')
-
+    
     # the methods below are additional methods and only applicable
     # for the scientific calculator objects. 
     # if is_scientific == False, the method wouldn't run
@@ -73,5 +73,5 @@ class BasicCalculator:
             print('This calculator can only perform simple arithmetic operations!')
     # this is similar to the "Ans" button in some calculators
     # which will print the answer of the last operation performed 
-    # def last_answer(self):
-    #     print(self.result)
+    def last_answer(self):
+        print(BasicCalculator.result)
