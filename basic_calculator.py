@@ -41,6 +41,9 @@ class BasicCalculator:
             print(self.result)
         except:
             print('There is an error. Please initialize the object properly.')
+    # the methods below are additional methods and only applicable
+    # for the scientific calculator objects. 
+    # if is_scientific == False, the method wouldn't run
     def exponentiate(self):
         if self.is_scientific == True:
             try:
