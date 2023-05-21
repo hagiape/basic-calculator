@@ -9,13 +9,27 @@ class BasicCalculator:
     
     def calculate(self):
         try:
-            if self.operator in ['+', '-', '*', '/']:
-                result = eval(f"self.first_number {self.operator} self.second_number")
+            if self.is_scientific:
+                if self.operator == '^':
+                    result = self.first_number ** self.second_number
+                elif self.operator == 'root':
+                    result = self.first_number ** (1/self.second_number)
+                elif self.operator == 'notation':
+                    result = self.first_number * (10 ** self.second_number)
+                elif self.operator in ['+', '-', '*', '/']:
+                    result = eval(f"self.first_number {self.operator} self.second_number")
+
                 if result.is_integer():
                     result = int(result)
                 print(result)
             else:
-                print('This calculator cannot perform that operation.')
+                if self.operator in ['+', '-', '*', '/']:
+                    result = eval(f"self.first_number {self.operator} self.second_number")
+                    if result.is_integer():
+                        result = int(result)
+                    print(result)
+                else:
+                    print('This calculator cannot perform that operation.')
         except ValueError:
             print('There is an error. Please initialize the calculator properly.')
 
