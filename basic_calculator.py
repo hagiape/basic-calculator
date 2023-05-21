@@ -36,6 +36,15 @@ class BasicCalculator:
             print(self.result)
         except:
             print('There is an error. Please initialize the object properly.')
+    def exponentiate(self):
+        if self.is_scientific == True:
+            try:
+                self.result = self.first_number ** self.second_number
+                print(self.result)
+            except:
+                print('There is an error. Please initialize the object properly.')
+        else:
+            print('This calculator can only perform simple arithmetic operations!')
     # this is similar to the "Ans" button in some calculators
     # which will print the answer of the last operation performed 
     def last_answer(self):
