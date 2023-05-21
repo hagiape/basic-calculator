@@ -1,5 +1,5 @@
 class BasicCalculator:
-
+    result = 0
     def __init__(self, first_number, operator, second_number, is_scientific = False, brand = 'Brand X'):
         self.first_number = float(first_number)
         self.operator = operator
@@ -8,7 +8,6 @@ class BasicCalculator:
         self.brand = brand
     
     def calculate(self):
-        result = 0
         try:
             if self.operator in ['+', '-', '*', '/']:
                 result = eval(f"self.first_number {self.operator} self.second_number")
