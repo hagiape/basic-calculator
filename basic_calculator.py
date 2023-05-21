@@ -12,6 +12,12 @@ class BasicCalculator:
         try:
             if operator == '+':
                 self.result = self.first_number + self.second_number
+            if operator == '-':
+                self.result = self.first_number - self.second_number
+            if operator == '*':
+                self.result = self.first_number * self.second_number
+            if operator == '/':
+                self.result = self.first_number / self.second_number
 
             if self.result.is_integer():
                 self.result = int(self.result)
