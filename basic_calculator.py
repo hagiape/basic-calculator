@@ -10,20 +10,32 @@ class BasicCalculator:
     # calculator functions
     # add
     def add_numbers(self):
-        self.result = self.first_number + self.second_number
-        print(self.result)
+        try:
+            self.result = self.first_number + self.second_number
+            print(self.result)
+        except:
+            print('There was an error. Please initialize the object appropriately.')
     # subtract
     def subtract_numbers(self):
-        self.result = self.first_number - self.second_number
-        print(self.result)
+        try:
+            self.result = self.first_number - self.second_number
+            print(self.result)
+        except:
+            print('There was an error. Please initialize the object appropriately.')
     # multiply
     def multiply_numbers(self):
-        self.result = self.first_number * self.second_number
-        print(self.result)
+        try:
+            self.result = self.first_number * self.second_number
+            print(self.result)
+        except:
+            print('There was an error. Please initialize the object appropriately.')
     # divide
     def divide_numbers(self):
-        self.result = self.first_number / self.second_number
-        print(self.result)
+        try:
+            self.result = self.first_number / self.second_number
+            print(self.result)
+        except:
+            print('There was an error. Please initialize the object appropriately.')
     # this is similar to the "Ans" button in some calculators
     # which will print the answer of the last operation performed 
     def last_answer(self):
