@@ -49,6 +49,12 @@ class BasicCalculator:
                     border('This calculator cannot perform that operation.')
         except:
             border('There is an error. Please initialize the calculator properly.')
+    
+    def show_info(self):
+        if self.is_scientific:
+            print('This is a scientific calculator.')
+        else:
+            print('This is a regular calculator')
 
     # this is similar to the "Ans" button in some calculators
     # which will print the answer of the last operation performed 
