@@ -51,6 +51,11 @@ class BasicCalculator:
             border('There is an error. Please initialize the calculator properly.')
     
     def show_info(self):
+        if self.brand == 'Brand X':
+            print('This is a generic brand of calculator')
+        else:
+            print('This is a ' + self.brand + 'calculator.')
+
         if self.is_scientific:
             print('This is a scientific calculator.')
         else:
