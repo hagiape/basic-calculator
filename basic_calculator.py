@@ -1,3 +1,18 @@
+# the code was modified, originally from Stack Overflow:
+# https://stackoverflow.com/a/20757225
+# function that creates text border based on the output
+def border(string):
+    text = string.splitlines()
+    max_length = max(len(s) for s in text)
+    column_width = max_length + 2
+    print('+' + ('-' * column_width) + '+')
+    for s in text:
+        print('| %-*.*s |' % (max_length, max_length, ''))
+        print('| %-*.*s |' % (max_length, max_length, s))
+        print('| %-*.*s |' % (max_length, max_length, ''))
+    print('+' + ('-' * column_width) + '+')
+
+
 class BasicCalculator:
     result = 0
     def __init__(self, first_number, operator, second_number, is_scientific = False, brand = 'Brand X'):
