@@ -52,14 +52,14 @@ class BasicCalculator:
     
     def show_info(self):
         if self.brand == 'Brand X':
-            print('This is a generic brand of calculator')
+            print('This is a generic brand of calculator.')
         else:
             print('This is a ' + self.brand + 'calculator.')
 
         if self.is_scientific:
             print('This is a scientific calculator.')
         else:
-            print('This is a regular calculator')
+            print('This is a regular calculator.')
 
     # this is similar to the "Ans" button in some calculators
     # which will print the answer of the last operation performed 
