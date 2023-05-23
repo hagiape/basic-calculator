@@ -47,7 +47,7 @@ class BasicCalculator:
                     border('The answer is: ' + BasicCalculator.answer)
                 else:
                     border('This calculator cannot perform that operation.')
-        except ValueError:
+        except:
             border('There is an error. Please initialize the calculator properly.')
 
     # this is similar to the "Ans" button in some calculators
