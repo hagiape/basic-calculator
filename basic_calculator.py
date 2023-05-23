@@ -38,13 +38,13 @@ class BasicCalculator:
 
                 if BasicCalculator.answer.is_integer():
                     BasicCalculator.answer = int(BasicCalculator.answer)
-                border('The answer is: ' + BasicCalculator.answer)
+                border('The answer is: ' + str(BasicCalculator.answer))
             else:
                 if self.operator in ['+', '-', '*', '/']:
                     BasicCalculator.answer = eval(f"self.first_number {self.operator} self.second_number")
                     if BasicCalculator.answer.is_integer():
                         BasicCalculator.answer = int(BasicCalculator.answer)
-                    border('The answer is: ' + BasicCalculator.answer)
+                    border('The answer is: ' + str(BasicCalculator.answer))
                 else:
                     border('This calculator cannot perform that operation.')
         except:
@@ -64,4 +64,4 @@ class BasicCalculator:
     # this is similar to the "Ans" button in some calculators
     # which will print the answer of the last operation performed 
     def last_answer(self):
-        border('The last answer is: ' + BasicCalculator.answer)
+        border('The last answer is: ' + str(BasicCalculator.answer))
