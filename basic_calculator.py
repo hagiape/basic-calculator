@@ -54,7 +54,7 @@ class BasicCalculator:
         if self.brand == 'Brand X':
             print('This is a generic brand of calculator.')
         else:
-            print('This is a ' + self.brand + 'calculator.')
+            print('This is a ' + self.brand + ' calculator.')
 
         if self.is_scientific:
             print('This is a scientific calculator.')
