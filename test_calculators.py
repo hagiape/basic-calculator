@@ -1,5 +1,9 @@
 from basic_calculator import BasicCalculator
 
+# basic operations: '+' for addition, '-' for subtraction, '*' fo multiplication, '/' for division
+# for scientific calculator: '^' for exponentiation, 'root' for nth root, 
+# 'notation' for converting scientific notation to decimal notation
+
 calculator1 = BasicCalculator(1, '+', 2, False)
 calculator1.calculate()
 calculator1.last_answer()
