@@ -1,6 +1,5 @@
 class BasicCalculator:
     answer = 0
-
     # this code was modified, originally from Stack Overflow:
     # https://stackoverflow.com/a/20757225
     # function that creates text border
@@ -61,7 +60,6 @@ class BasicCalculator:
             BasicCalculator.border('This is a scientific calculator.')
         else:
             BasicCalculator.border('This is a regular calculator.')
-
     # this is similar to the "Ans" button in some calculators
     # which will print the answer of the last operation performed 
     def last_answer(self):
