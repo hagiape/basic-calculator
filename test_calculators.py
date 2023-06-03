@@ -11,20 +11,17 @@ second_number = 2
 third_number = 3
 fourth_number  = 4
 
-calculator1 = BasicCalculator()
-calculator1.add()
-calculator1.last_answer()
-calculator1 = BasicCalculator(2, '*', BasicCalculator.answer, False)
-calculator1.calculate()
-calculator1.last_answer()
-calculator1.show_info()
+calculator_one = BasicCalculator()
+BasicCalculator.border("The answer is: " + str(calculator_one.add(first_number, second_number)))
+calculator_one.last_answer()
+calculator_one.show_info()
 
-calculator2 = BasicCalculator(5, '^', 2, True, 'Casio')
-calculator2.calculate()
-calculator2.last_answer()
-calculator2.show_info()
+# calculator2 = BasicCalculator(5, '^', 2, True, 'Casio')
+# calculator2.calculate()
+# calculator2.last_answer()
+# calculator2.show_info()
 
-calculator2 = BasicCalculator(25,'root', 2, True, 'Casio')
-calculator2.calculate()
-calculator2 = BasicCalculator(2.525, 'notation', 3, True, 'Casio')
-calculator2.calculate()
+# calculator2 = BasicCalculator(25,'root', 2, True, 'Casio')
+# calculator2.calculate()
+# calculator2 = BasicCalculator(2.525, 'notation', 3, True, 'Casio')
+# calculator2.calculate()
