@@ -6,8 +6,13 @@ from scientific_calculator import ScientificCalculator
 # for scientific calculator: "exponentiate()" for exponentiation, "root()" for nth root, 
 # "notation()" for converting scientific notation to decimal notation
 
-calculator1 = BasicCalculator(1, '+', 2, False)
-calculator1.calculate()
+first_number = 1
+second_number = 2
+third_number = 3
+fourth_number  = 4
+
+calculator1 = BasicCalculator()
+calculator1.add()
 calculator1.last_answer()
 calculator1 = BasicCalculator(2, '*', BasicCalculator.answer, False)
 calculator1.calculate()
