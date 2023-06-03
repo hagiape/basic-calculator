@@ -4,14 +4,13 @@ class BasicCalculator:
     # https://stackoverflow.com/a/20757225
     # function that creates text border
     def border(string):
+        string = str(string)
         text = string.splitlines()
         max_length = max(len(s) for s in text)
         column_width = max_length + 2
         print('+' + ('-' * column_width) + '+')
         for s in text:
-            print('| %-*.*s |' % (max_length, max_length, ''))
             print('| %-*.*s |' % (max_length, max_length, s))
-            print('| %-*.*s |' % (max_length, max_length, ''))
         print('+' + ('-' * column_width) + '+')
 
     def integer_conversion():
@@ -41,6 +40,7 @@ class BasicCalculator:
         BasicCalculator.integer_conversion()
         return BasicCalculator.answer
     
+    # this method shows information about the calculator object
     def show_info(self):
         if self.brand == 'Brand X':
             BasicCalculator.border('This is a generic brand of a basic calculator.')
