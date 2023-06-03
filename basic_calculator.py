@@ -20,22 +20,22 @@ class BasicCalculator:
             BasicCalculator.answer = int(BasicCalculator.answer)
 
     def add(self, first_number, second_number):
-        BasicCalculator.answer = float(first_number) + float(second_number)
+        BasicCalculator.answer = float(first_number + second_number)
         BasicCalculator.integer_conversion(self)
         return BasicCalculator.answer
     
     def subtract(self, first_number, second_number):
-        BasicCalculator.answer = float(first_number) + float(second_number)
+        BasicCalculator.answer = float(first_number + second_number)
         BasicCalculator.integer_conversion(self)
         return BasicCalculator.answer
     
     def multiply(self, first_number, second_number):
-        BasicCalculator.answer = float(first_number) * float(second_number)
+        BasicCalculator.answer = float(first_number * second_number)
         BasicCalculator.integer_conversion(self)
         return BasicCalculator.answer
     
     def divide(self, first_number, second_number):
-        BasicCalculator.answer = float(first_number) / float(second_number)
+        BasicCalculator.answer = float(first_number / second_number)
         BasicCalculator.integer_conversion(self)
         return BasicCalculator.answer
     
