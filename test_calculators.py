@@ -8,20 +8,24 @@ from scientific_calculator import ScientificCalculator
 
 first_number = 1
 second_number = 2
-third_number = 3
-fourth_number  = 4
+third_number = 4
 
 calculator_one = BasicCalculator()
 BasicCalculator.border("The answer is: " + str(calculator_one.add(first_number, second_number)))
-calculator_one.last_answer()
+BasicCalculator.border("The last answer is: " + str(calculator_one.last_answer()))
 calculator_one.show_info()
 
-# calculator2 = BasicCalculator(5, '^', 2, True, 'Casio')
-# calculator2.calculate()
-# calculator2.last_answer()
-# calculator2.show_info()
+calculator_two = BasicCalculator("Sharp")
+BasicCalculator.border("The answer is: " + str(calculator_two.subtract(third_number, first_number)))
+BasicCalculator.border("The last answer is: " + str(calculator_two.last_answer()))
+calculator_two.show_info()
 
-# calculator2 = BasicCalculator(25,'root', 2, True, 'Casio')
-# calculator2.calculate()
-# calculator2 = BasicCalculator(2.525, 'notation', 3, True, 'Casio')
-# calculator2.calculate()
+calculator_three = ScientificCalculator()
+ScientificCalculator.border("The answer is: " + str(calculator_three.multiply(third_number, second_number)))
+ScientificCalculator.border("The last answer is: " + str(calculator_three.last_answer()))
+calculator_three.show_info()
+
+calculator_four = ScientificCalculator("Casio")
+ScientificCalculator.border("The answer is: " + str(calculator_four.exponentiate(second_number, third_number)))
+ScientificCalculator.border("The last answer is: " + str(calculator_four.last_answer()))
+calculator_four.show_info()
