@@ -14,8 +14,9 @@ class BasicCalculator:
         print('+' + ('-' * column_width) + '+')
 
     def integer_conversion():
-        if BasicCalculator.answer.is_integer:
-            BasicCalculator.answer = int(BasicCalculator.answer)
+        if BasicCalculator.answer is float:
+            if BasicCalculator.answer.is_integer:
+                BasicCalculator.answer = int(BasicCalculator.answer)
 
     def __init__(self, brand = 'Brand X'):
         self.brand = brand
