@@ -7,3 +7,6 @@ class ScientificCalculator(BasicCalculator):
     def root(self, first_number, second_number):
         ScientificCalculator.answer = first_number ** (1/second_number)
         return ScientificCalculator.answer
+    def notation(self, first_number, second_number):
+        ScientificCalculator.answer = first_number * (10 ** second_number)
+        return ScientificCalculator.answer
