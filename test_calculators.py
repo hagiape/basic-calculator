@@ -1,4 +1,5 @@
 from basic_calculator import BasicCalculator
+from scientific_calculator import ScientificCalculator
 
 # basic operations: '+' for addition, '-' for subtraction, '*' fo multiplication, '/' for division
 # for scientific calculator: '^' for exponentiation, 'root' for nth root, 
