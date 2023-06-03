@@ -40,6 +40,12 @@ class BasicCalculator:
         BasicCalculator.answer = float(first_number) / float(second_number)
         BasicCalculator.integer_conversion()
         return BasicCalculator.answer
+    
+    def show_info(self):
+        if self.brand == 'Brand X':
+            BasicCalculator.border('This is a generic brand of a basic calculator.')
+        else:
+            BasicCalculator.border('This is a ' + self.brand + ' basic calculator.')
 
     # this is similar to the "Ans" button in some calculators
     # which will print the answer of the last operation performed 
