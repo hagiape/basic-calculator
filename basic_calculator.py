@@ -4,7 +4,7 @@ class BasicCalculator:
     # https://stackoverflow.com/a/20757225
     # function that creates text border
     @classmethod
-    def border(self, string):
+    def border(cls, string):
         text = string.splitlines()
         max_length = max(len(s) for s in text)
         column_width = max_length + 2
