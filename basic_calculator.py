@@ -17,7 +17,7 @@ class BasicCalculator:
         self.brand = brand
     
     def integer_conversion(self):
-        if self.answer.is_integer():
+        if isinstance(self.answer, float) and self.answer.is_integer:
             self.answer = int(self.answer)
 
     def add(self, first_number, second_number):
